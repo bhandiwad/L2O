@@ -1,0 +1,279 @@
+/* Sify Brand Theme - Based on sifytechnologies.com */
+
+:root {
+  /* Sify Primary Colors */
+  --sify-blue: #0066cc;
+  --sify-dark-blue: #004499;
+  --sify-light-blue: #3385dd;
+  --sify-orange: #ff6600;
+  --sify-dark-orange: #e55a00;
+  --sify-light-orange: #ff8533;
+  
+  /* Sify Neutral Colors */
+  --sify-dark-gray: #2c3e50;
+  --sify-medium-gray: #7f8c8d;
+  --sify-light-gray: #ecf0f1;
+  --sify-white: #ffffff;
+  
+  /* Sify Gradient */
+  --sify-gradient: linear-gradient(135deg, var(--sify-blue) 0%, var(--sify-dark-blue) 100%);
+  --sify-orange-gradient: linear-gradient(135deg, var(--sify-orange) 0%, var(--sify-dark-orange) 100%);
+}
+
+/* Override default Tailwind colors with Sify theme */
+.bg-blue-600 {
+  background-color: var(--sify-blue) !important;
+}
+
+.bg-blue-700 {
+  background-color: var(--sify-dark-blue) !important;
+}
+
+.bg-blue-900 {
+  background-color: var(--sify-dark-blue) !important;
+}
+
+.text-blue-600 {
+  color: var(--sify-blue) !important;
+}
+
+.text-blue-700 {
+  color: var(--sify-dark-blue) !important;
+}
+
+.border-blue-600 {
+  border-color: var(--sify-blue) !important;
+}
+
+.bg-orange-600 {
+  background-color: var(--sify-orange) !important;
+}
+
+.bg-orange-700 {
+  background-color: var(--sify-dark-orange) !important;
+}
+
+.text-orange-600 {
+  color: var(--sify-orange) !important;
+}
+
+/* Sify Header Styling */
+.sify-header {
+  background: var(--sify-gradient);
+  color: var(--sify-white);
+}
+
+.sify-header h1 {
+  color: var(--sify-white);
+}
+
+.sify-header p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Sify Button Styling */
+.sify-btn-primary {
+  background: var(--sify-gradient);
+  color: var(--sify-white);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.sify-btn-primary:hover {
+  background: var(--sify-dark-blue);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.sify-btn-secondary {
+  background: var(--sify-orange-gradient);
+  color: var(--sify-white);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.sify-btn-secondary:hover {
+  background: var(--sify-dark-orange);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+/* Sify Card Styling */
+.sify-card {
+  background: var(--sify-white);
+  border: 1px solid rgba(0, 102, 204, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sify-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.15);
+  transform: translateY(-2px);
+}
+
+.sify-card-header {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 102, 204, 0.1) 100%);
+  border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+/* Sify Badge Styling */
+.sify-badge-primary {
+  background: var(--sify-blue);
+  color: var(--sify-white);
+}
+
+.sify-badge-secondary {
+  background: var(--sify-orange);
+  color: var(--sify-white);
+}
+
+.sify-badge-success {
+  background: #27ae60;
+  color: var(--sify-white);
+}
+
+.sify-badge-warning {
+  background: #f39c12;
+  color: var(--sify-white);
+}
+
+.sify-badge-danger {
+  background: #e74c3c;
+  color: var(--sify-white);
+}
+
+/* Sify Background Gradients */
+.sify-bg-gradient {
+  background: linear-gradient(135deg, 
+    rgba(0, 102, 204, 0.05) 0%, 
+    rgba(255, 102, 0, 0.05) 50%, 
+    rgba(0, 102, 204, 0.05) 100%);
+}
+
+.sify-bg-primary {
+  background: var(--sify-gradient);
+}
+
+.sify-bg-secondary {
+  background: var(--sify-orange-gradient);
+}
+
+/* Sify Text Colors */
+.sify-text-primary {
+  color: var(--sify-blue);
+}
+
+.sify-text-secondary {
+  color: var(--sify-orange);
+}
+
+.sify-text-dark {
+  color: var(--sify-dark-gray);
+}
+
+.sify-text-medium {
+  color: var(--sify-medium-gray);
+}
+
+/* Sify Border Colors */
+.sify-border-primary {
+  border-color: var(--sify-blue);
+}
+
+.sify-border-secondary {
+  border-color: var(--sify-orange);
+}
+
+/* Sify Progress Bar */
+.sify-progress {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+.sify-progress-bar {
+  background: var(--sify-gradient);
+}
+
+/* Sify Input Styling */
+.sify-input {
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.sify-input:focus {
+  border-color: var(--sify-blue);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+/* Sify Table Styling */
+.sify-table {
+  border: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+.sify-table th {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 102, 204, 0.1) 100%);
+  color: var(--sify-dark-gray);
+  font-weight: 600;
+}
+
+.sify-table tr:hover {
+  background-color: rgba(0, 102, 204, 0.02);
+}
+
+/* Sify Modal Styling */
+.sify-modal {
+  background: var(--sify-white);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 102, 204, 0.15);
+}
+
+.sify-modal-header {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 102, 204, 0.1) 100%);
+  border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+}
+
+/* Sify Navigation */
+.sify-nav {
+  background: var(--sify-white);
+  border-bottom: 1px solid rgba(0, 102, 204, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 102, 204, 0.1);
+}
+
+.sify-nav-item:hover {
+  background-color: rgba(0, 102, 204, 0.05);
+  color: var(--sify-blue);
+}
+
+/* Sify Status Colors */
+.sify-status-active {
+  background-color: #27ae60;
+  color: white;
+}
+
+.sify-status-inactive {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.sify-status-pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.sify-status-maintenance {
+  background-color: #9b59b6;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sify-card {
+    margin: 8px;
+  }
+  
+  .sify-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
